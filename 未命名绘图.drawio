@@ -1,0 +1,277 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="28.2.5">
+  <diagram name="第 1 页" id="FmrsYlm9O2vfWojRQOaA">
+    <mxGraphModel dx="4270" dy="1895" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-5" value="&lt;font face=&quot;Lucida Console&quot;&gt;ReentrantLock&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=20;fontColor=#3333FF;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-6" target="nyYqX1nxgzJ5DlLS-ViO-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-6" value="lock()" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="320" y="130" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=22;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-7" target="nyYqX1nxgzJ5DlLS-ViO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-11" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;true&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="nyYqX1nxgzJ5DlLS-ViO-10">
+          <mxGeometry x="0.0133" y="2" relative="1" as="geometry">
+            <mxPoint x="3" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-7" target="nyYqX1nxgzJ5DlLS-ViO-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-7" value="&lt;font face=&quot;Lucida Console&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;p lang=&quot;en-US&quot; style=&quot;margin: 0in;&quot;&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/p&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;&lt;p style=&quot;margin: 0in;&quot;&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;&quot;&gt;compareAndSetState(&lt;/span&gt;&lt;span style=&quot;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot;&quot;&gt;)&lt;/span&gt;&lt;/font&gt;&lt;/p&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;false&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="200" y="240" width="320" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-9" value="&lt;font face=&quot;Lucida Console&quot;&gt;setExclusiveOwnerThread&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="275" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-27" target="nyYqX1nxgzJ5DlLS-ViO-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-27" value="&lt;font face=&quot;Lucida Console&quot;&gt;acquire(1)&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="295" y="490" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-30" target="nyYqX1nxgzJ5DlLS-ViO-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-30" value="&lt;font face=&quot;Lucida Console&quot;&gt;!tryAcquire(arg)&lt;/font&gt;&lt;div&gt;&lt;div&gt;&lt;pre style=&quot;&quot;&gt;&lt;font&gt;&lt;font face=&quot;Lucida Console&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;a&lt;/font&gt;&lt;font face=&quot;Lucida Console&quot; style=&quot;color: rgb(0, 0, 0);&quot;&gt;cquireQueued(addWaiter(Node.&lt;span style=&quot;font-style: italic;&quot;&gt;EXCLUS&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;IVE&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;), arg)&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;)&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="45" y="580" width="630" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-38" value="" style="endArrow=none;html=1;rounded=0;convertToSvg=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="619" as="sourcePoint" />
+            <mxPoint x="620" y="619" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-39" value="" style="endArrow=none;html=1;rounded=0;convertToSvg=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="619" as="sourcePoint" />
+            <mxPoint x="620" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-40" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="nyYqX1nxgzJ5DlLS-ViO-41">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="580" as="sourcePoint" />
+            <mxPoint x="620" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-41" value="&lt;font face=&quot;Lucida Console&quot; style=&quot;font-size: 20px;&quot;&gt;nofairTryAcquire&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="490" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-89" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-43" target="nyYqX1nxgzJ5DlLS-ViO-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-43" value="addWaiter&amp;nbsp;" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="50" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-55" value="1." style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-780" y="720" width="290" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-46" value="&lt;font style=&quot;forced-color-adjust: none; font-size: 20px;&quot;&gt;AQS&lt;/font&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&#xa;&#xa;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-55">
+          <mxGeometry x="45" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-47" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;had&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;tail&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;state&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-55">
+          <mxGeometry x="30" y="30" width="80" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-48" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-55">
+          <mxGeometry x="195" y="30" width="80" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-49" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;next&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-55">
+          <mxGeometry x="220" y="40" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-51" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;tail&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-55">
+          <mxGeometry x="217.5" y="90" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-52" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-55">
+          <mxGeometry x="95" y="40" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-53" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-55">
+          <mxGeometry x="95" y="90" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-84" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;0&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-55">
+          <mxGeometry x="217.5" y="140" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-64" value="2." style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-455" y="720" width="485" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-65" value="&lt;font style=&quot;forced-color-adjust: none; font-size: 20px;&quot;&gt;AQS&lt;/font&gt;&lt;div style=&quot;forced-color-adjust: none;&quot;&gt;&lt;br style=&quot;forced-color-adjust: none; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&#xa;&#xa;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="45" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-66" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;had&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;tail&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;state&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="30" y="30" width="80" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-67" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="195" y="30" width="80" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-68" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;next&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="215" y="40" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-69" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;prev&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="212.5" y="90" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-70" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="95" y="40" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-72" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fontStyle=0" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="365" y="30" width="80" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-73" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;next&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="382.5" y="40" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-74" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;prev&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="382.5" y="90" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-75" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="265" y="40" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-76" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="nyYqX1nxgzJ5DlLS-ViO-64" target="nyYqX1nxgzJ5DlLS-ViO-74">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="95" y="100" as="sourcePoint" />
+            <mxPoint x="445" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="135" y="100" />
+              <mxPoint x="135" y="190" />
+              <mxPoint x="465" y="190" />
+              <mxPoint x="465" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-83" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.971;entryY=0.577;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="nyYqX1nxgzJ5DlLS-ViO-64" target="nyYqX1nxgzJ5DlLS-ViO-67">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="375" y="109.30999999999995" as="sourcePoint" />
+            <mxPoint x="305" y="109.30999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-85" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;0&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="215" y="140" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-86" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;0&lt;/font&gt;" style="labelBorderColor=none;html=1;textShadow=0;strokeColor=#FFFFFF;" vertex="1" parent="nyYqX1nxgzJ5DlLS-ViO-64">
+          <mxGeometry x="382.5" y="140" width="45" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-91" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-88" target="nyYqX1nxgzJ5DlLS-ViO-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-88" value="&lt;font face=&quot;Lucida Console&quot;&gt;accquireQueued&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="250" y="790" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-95" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-90" target="nyYqX1nxgzJ5DlLS-ViO-94">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-100" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-90" target="nyYqX1nxgzJ5DlLS-ViO-99">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-90" value="&lt;font face=&quot;Lucida Console&quot;&gt;prev==head&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&amp;amp;&amp;amp;tryAcquire(arg)&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="176.25" y="890" width="327.5" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-94" value="获取到锁" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="687.5" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-96" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;true&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="913" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-99" value="&lt;div&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;font-style: italic; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Lucida Console&quot;&gt;shouldParkAfterFailedAcquire(pred,node)&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;font-style: italic; background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Lucida Console&quot;&gt;&amp;amp;&amp;amp;parkAndCheckInterrupt()&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1070" width="621.87" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-101" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;false&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1023" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-102" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="1120" as="sourcePoint" />
+            <mxPoint x="-70" y="1120" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-103" value="&lt;pre style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-size: 20px; font-family: &amp;quot;Lucida Console&amp;quot;; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;int ws = pred.waitStatus;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-size: 20px; font-family: &amp;quot;Lucida Console&amp;quot;; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;if (ws == Node.&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-size: 20px; font-family: &amp;quot;Lucida Console&amp;quot;; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal; font-style: italic;&quot;&gt;SIGNAL&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-size: 20px; font-family: &amp;quot;Lucida Console&amp;quot;; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;font face=&quot;Lucida Console&quot; style=&quot;color: rgb(0, 0, 0); font-size: 20px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; return true;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Lucida Console&amp;quot;; color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;if (ws &amp;gt; 0) {&lt;/span&gt;&lt;/div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; do {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; node.prev = pred = pred.prev;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; } while (pred.waitStatus &amp;gt; 0);&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;&amp;nbsp; &amp;nbsp; pred.next = node;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;} else {&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot; face=&quot;Lucida Console&quot;&gt;    &lt;/font&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal; font-style: italic;&quot;&gt;compareAndSetWaitStatus&lt;/span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot; face=&quot;Lucida Console&quot;&gt;(pred, ws, Node.&lt;/font&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal; font-style: italic;&quot;&gt;SIGNAL&lt;/span&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot; face=&quot;Lucida Console&quot;&gt;);&lt;/font&gt;&lt;/div&gt;&lt;/font&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); white-space: normal;&quot;&gt;return false;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(128, 128, 128);&quot; face=&quot;Lucida Console&quot;&gt;第一次加入队列的线程节点判断时，前驱节点是一个哨兵节点，ws&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(128, 128, 128);&quot; face=&quot;Lucida Console&quot;&gt;ws默认是0，所以返回设置前驱节点ws为SIGNAL，返回false，然后&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(128, 128, 128);&quot; face=&quot;Lucida Console&quot;&gt;在for循环中再次判断。&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-650" y="960" width="590" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-105" value="&lt;pre style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 20px; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);&quot; face=&quot;Lucida Console&quot;&gt;LockSupport.&lt;span style=&quot;font-style: italic;&quot;&gt;park&lt;/span&gt;(&lt;span&gt;this&lt;/span&gt;);&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 20px; background-color: rgb(255, 255, 255);&quot;&gt;陷入阻塞，等待主线程唤醒，唤醒后&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 20px; background-color: rgb(255, 255, 255);&quot;&gt;返回accquireQueued继续尝试&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;&lt;pre style=&quot;text-align: left;&quot;&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 20px; background-color: rgb(255, 255, 255);&quot;&gt;获取锁(tryAcquire)。&lt;/span&gt;&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="475" y="1200" width="332.5" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-110" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-108" target="nyYqX1nxgzJ5DlLS-ViO-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-108" value="unlock()" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="130" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-125" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-109" target="nyYqX1nxgzJ5DlLS-ViO-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-109" value="&lt;font face=&quot;Lucida Console&quot;&gt;release(1)&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="265" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-117" value="&lt;font face=&quot;Lucida Console&quot; style=&quot;font-size: 20px;&quot;&gt;第一种情况：state为0，尝试设置state&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot; style=&quot;font-size: 20px;&quot;&gt;为acquires，并设置主线程。&lt;/font&gt;&lt;div style=&quot;&quot;&gt;&lt;font face=&quot;Lucida Console&quot; style=&quot;font-size: 20px;&quot;&gt;第二种情况：当前线程为主线程，将&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; state加上acquires&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;align=left;spacingLeft=15;spacing=0;spacingTop=0;" vertex="1" parent="1">
+          <mxGeometry x="526.88" y="290" width="363.12" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-118" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="619.38" y="490" as="sourcePoint" />
+            <mxPoint x="619" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-124" target="nyYqX1nxgzJ5DlLS-ViO-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-124" value="tryRelease(arg)" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1495" y="380" width="210" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-130" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-size: 20px;&quot; face=&quot;Lucida Console&quot;&gt;int c = getState() - releases;&lt;br&gt;boolean free = false;&lt;br&gt;if (c == 0) {&lt;br&gt;    free = true;&lt;br&gt;    setExclusiveOwnerThread(null);&lt;br&gt;}&lt;br&gt;setState(c);&lt;br&gt;return free;&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="1730" y="312.5" width="447" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-131" value="&lt;font style=&quot;font-size: 20px;&quot; face=&quot;Lucida Console&quot;&gt;tryRelease源码&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1747" y="270" width="430" height="42.5" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-136" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-132" target="nyYqX1nxgzJ5DlLS-ViO-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-132" value="&lt;font face=&quot;Lucida Console&quot;&gt;head!=null&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&amp;amp;&amp;amp;head.waitStatus!=0&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="500" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-134" value="&lt;font face=&quot;Lucida Console&quot; style=&quot;font-size: 20px;&quot;&gt;true&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="460" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-139" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-135" target="nyYqX1nxgzJ5DlLS-ViO-138">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-135" value="&lt;font face=&quot;Lucida Console&quot;&gt;head!=null&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&amp;amp;&amp;amp;head.waitStatus!=0&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="710" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-137" value="&lt;font face=&quot;Lucida Console&quot; style=&quot;font-size: 20px;&quot;&gt;true&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="640" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-142" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nyYqX1nxgzJ5DlLS-ViO-138" target="nyYqX1nxgzJ5DlLS-ViO-141">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-138" value="&lt;font face=&quot;Lucida Console&quot;&gt;head!=null&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&amp;amp;&amp;amp;head.waitStatus!=0&lt;/font&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="920" width="340" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-140" value="&lt;font face=&quot;Lucida Console&quot; style=&quot;font-size: 20px;&quot;&gt;true&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="853" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-141" value="unparkSuccessor(head)" style="whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="1080" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-143" value="&lt;div&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 20px; line-height: 120%;&quot; face=&quot;Lucida Console&quot;&gt;int ws = node.waitStatus;&lt;br&gt;if (ws &amp;lt; 0)&lt;br&gt;    &lt;span style=&quot;font-style: italic;&quot;&gt;compareAndSetWaitStatus&lt;/span&gt;(node, ws, 0);&lt;br&gt;Node s = node.next;&lt;br&gt;if (s == null || s.waitStatus &amp;gt; 0) {&lt;br&gt;    s = null;&lt;br&gt;    for (Node t = tail; &lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 20px; line-height: 120%;&quot; face=&quot;Lucida Console&quot;&gt;         t != null&amp;amp;&amp;amp; t!= node; &lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); line-height: 100%;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0); font-size: 20px; line-height: 120%;&quot; face=&quot;Lucida Console&quot;&gt;         t = t.prev)&lt;br&gt;      if (t.waitStatus &amp;lt;= 0)&lt;br&gt;         s = t;&lt;br&gt;}&lt;br&gt;if (s != null)&lt;br&gt;    LockSupport.&lt;span style=&quot;font-style: italic;&quot;&gt;unpark&lt;/span&gt;(s.thread);&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;align=left;spacingLeft=26;" vertex="1" parent="1">
+          <mxGeometry x="1773" y="910" width="537" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-145" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="1160" as="sourcePoint" />
+            <mxPoint x="610" y="1200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nyYqX1nxgzJ5DlLS-ViO-147" value="&lt;font style=&quot;font-size: 20px;&quot; face=&quot;Lucida Console&quot;&gt;LockSupport.unpark(s.thread)唤醒s.thread,&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;Lucida Console&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;此时，被唤醒的线程从&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &amp;quot;Lucida Console&amp;quot;; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-style: italic; font-size: 20px; text-align: center;&quot;&gt;parkAndCheckInterrupt恢复&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); font-family: &amp;quot;Lucida Console&amp;quot;; background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); font-style: italic; font-size: 20px; text-align: center;&quot;&gt;执行。&lt;/span&gt;&lt;/div&gt;" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;align=left;spacingLeft=17;" vertex="1" parent="1">
+          <mxGeometry x="1773" y="1310" width="537" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
